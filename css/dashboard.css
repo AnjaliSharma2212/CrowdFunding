@@ -1,0 +1,165 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #c085cf;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.container {
+  width: 400px;
+  height: fit-content;
+  margin: auto;
+  padding: 30px;
+  background: linear-gradient(rgb(139, 74, 139), rgb(238, 164, 238));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+form {
+  padding: 10px 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+input:focus {
+  border: 2px solid #55048b;
+  outline: none;
+  box-shadow: 0 0 5px rgba(105, 11, 143, 0.5);
+}
+input {
+  width: 100%;
+  padding: 10px 5px;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+::placeholder {
+  color: #a483a4;
+  font-style: italic;
+}
+input:valid {
+  border: 2px solid rgb(77, 14, 160);
+}
+.btn {
+  width: 100px;
+  height: 35px;
+  padding: 10px;
+  margin: 5px 5px;
+  transition: all 0.3s ease;
+  border: none;
+  border-radius: 8px;
+}
+.btn:hover {
+  background-color: #8936e9;
+  color: white;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.3 ease;
+  border: none;
+}
+
+#progress-bar-container {
+  width: 100%;
+  max-width: 600px;
+  background-color: rgb(150, 49, 209);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#progress {
+  height: 20px;
+  width: 0; /* Updated dynamically */
+  background-color: green;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #3f0a4d;
+}
+
+#progress-bar-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+#progress-bar {
+  background-color: #ddd;
+  border-radius: 20px;
+  width: 100%;
+  height: 30px;
+  margin: auto;
+}
+
+#progress {
+  background-color: #4caf50;
+  height: 100%;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
+#progress-percentage {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #510c80;
+}
+
+#badge-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+#progress {
+  transition: width 0.5s ease-in-out;
+  background-color: green;
+  height: 20px;
+}
+
+.badge {
+  background-color: rgb(157, 36, 212);
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.badge.gold {
+  background-color: gold;
+}
+
+.badge.silver {
+  background-color: silver;
+}
+
+.badge.bronze {
+  background-color: #cd7f32;
+}
+
+/* Logout button */
+#logout-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: purple;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}

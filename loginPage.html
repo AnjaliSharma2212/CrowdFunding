@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/css/loginPage.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 style="text-align: center" class="h2-text">Login Page</h2>
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        class="input-email"
+        id="input-email-login"
+        placeholder="Enter your email"
+        required
+      />
+
+      <label for="password">Password</label>
+      <input
+        type="password"
+        class="input-password"
+        id="input-password-login"
+        placeholder="Enter password"
+        required
+      />
+      <select id="role">
+        <option value="user">User</option>
+        <option value="admin">Admin</option>
+      </select>
+
+      <button id="login-btn" class="btn">Login</button>
+      <p id="login-message"></p>
+      <p id="redirect-login">
+        Don't have any account? Create <a href="signupPage.html">Signup</a>
+      </p>
+    </div>
+    <script type="module" src="/js/auth.js"></script>
+  </body>
+</html>

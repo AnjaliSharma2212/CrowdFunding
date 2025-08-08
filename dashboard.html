@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donation Tracking Dashboard</title>
+    <link rel="stylesheet" href="/css/dashboard.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="color: purple;">
+        Welcome,<span>(<span></span>)</span>
+      </h1>
+      <h3><a href="patientDetails.html">Add patients</a></h3>
+
+      <!-- dashborad tacking  -->
+      <div id="dashboard">
+        <h1>Donation Tracking Dashboard</h1>
+        <div id="progress-bar" style="width: 100%; background-color: #eee;">
+            <div id="progress" style="width: 0%; height: 20px; background-color: #4caf50;"></div>
+        </div>
+        <div>
+            <p>Total Raised: ₹<span id="totalRaised">0</span></p>
+            <p>Number of Donors: <span id="donors">0</span></p>
+            <p>Average Donation: ₹<span id="averageDonation">0</span></p>
+        </div>
+    </div>
+    <div id="data-container"></div>
+            <p id="progress-percentage">0% of Goal Achieved</p>
+          </div>
+        </section>
+        <!-- Donation stats -->
+        <section id="donation-stats">
+          <h2>Donation Statistics</h2>
+          <p id="total-donors">Total Donors: --</p>
+          <p id="total-funds">Total Funds: $--</p>
+          <p id="remaining-time">Time Left: -- days</p>
+        </section>
+
+        <!-- Supporters badges -->
+        <section id="supporter-badges">
+          <h2>Top Supporters</h2>
+          <div id="badge-container"></div>
+        </section>
+      </div>
+      
+      <button id="logout-btn" class="btn"><b>Logout</b></button>
+    </div>
+
+    <script type="module" src="/js/auth.js"></script>
+    <script type="module" src="/js/dashboard.js"></script>
+    <script type="module" src="/js/firebase-config.js"></script>
+  </body>
+</html>

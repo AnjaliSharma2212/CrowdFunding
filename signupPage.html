@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup page</title>
+    <link rel="stylesheet" href="/css/signup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="signup-form">
+        <h2 style="text-align: center" class="h2-text">SignUp Page</h2>
+        <label for="name">Display Name:</label>
+        <input
+          type="text"
+          class="input-name"
+          id="input-name-signup"
+          placeholder="Enter your name"
+          required
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          class="input-email"
+          id="input-email-signup"
+          placeholder="Enter your email"
+          required
+        />
+
+        <label for="password">Password</label>
+        <input
+          type="password"
+          class="input-password"
+          id="input-password-signup"
+          placeholder="Enter password"
+          req
+        />
+
+        <select id="role">
+          <option value="user">User</option>
+          <option value="admin">Admin</option>
+        </select>
+
+        <button id="signup-btn" class="btn">SignUp</button>
+        <p id="signup-message"></p>
+        <p id="redirect-login">
+          Already have account? <a href="loginPage.html">Login</a>
+        </p>
+      </form>
+    </div>
+    <script type="module" src="/js/auth.js"></script>
+  </body>
+</html>

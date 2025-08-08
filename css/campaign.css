@@ -1,0 +1,246 @@
+body {
+  background-image: url("https://i.pinimg.com/236x/03/fa/47/03fa47d6859c508ec0ff68db968b86cb.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hidden {
+  display: none;
+}
+.form-step {
+  margin: 20px;
+}
+
+/* drag drop area css */
+#drop-area {
+  width: 300px;
+  height: 150px;
+  border: 2px dashed purple;
+  text-align: center;
+  line-height: 150px;
+  margin: 20px auto;
+}
+#file-name-display {
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: purple;
+  text-align: center;
+}
+#milestone-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Styling for individual milestones */
+.milestone {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Makes them circular */
+  text-align: center;
+  line-height: 50px; /* Centers text vertically */
+  color: white;
+  background-color: gray;
+}
+
+.form-step {
+  gap: 30px;
+  position: relative; /* Maintain relative positioning */
+  background-color: #ffffff; /* White background for clarity */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Inner padding */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 100px auto; /* Add top margin to create space below `second-section` */
+  max-width: 600px; /* Limit container width */
+  z-index: 2; /* Ensure form steps appear above the `second-section` */
+  transition: opacity 0.3s ease, transform 0.2s ease; /* Smooth effects */
+}
+/* Step 1: General Styling */
+#form-step-1 {
+  background-color: #ffffff; /* White background for clarity */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Space within the container */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 20px auto; /* Center alignment */
+  max-width: 600px; /* Limit width for readability */
+}
+
+/* Input Fields for Campaign Title */
+#campaign-title {
+  width: 100%; /* Full-width input */
+  padding: 10px; /* Space within input */
+  font-size: 16px; /* Font size */
+  border: 1px solid rgb(143, 89, 143); /* Purple border */
+  border-radius: 5px; /* Rounded edges */
+  margin-bottom: 15px; /* Space below */
+}
+
+/* Textarea Styling for Campaign Description */
+#campaign-description {
+  width: 100%; /* Full-width textarea */
+  padding: 10px; /* Space within textarea */
+  font-size: 16px; /* Font size */
+  border: 1px solid rgb(143, 89, 143); /* Purple border */
+  border-radius: 5px; /* Rounded edges */
+  margin-bottom: 15px; /* Space below */
+  resize: none; /* Prevent resizing */
+  line-height: 1.4; /* Improve readability */
+}
+
+/* Button Styling */
+#form-step-1 button {
+  background-color: rgb(143, 89, 143); /* Purple background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded edges */
+  padding: 10px 20px; /* Button size */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 16px; /* Font size */
+  margin-top: 10px; /* Space above */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#form-step-1 button:hover {
+  background-color: rgb(138, 54, 138); /* Darker purple on hover */
+  transform: scale(1.05); /* Subtle hover effect */
+}
+/* Responsive Styling */
+@media (max-width: 768px) {
+  #form-step-1 {
+    padding: 15px; /* Adjust padding */
+    width: 90%; /* Reduce width for smaller screens */
+  }
+
+  #campaign-title,
+  #campaign-description {
+    font-size: 14px; /* Smaller font size */
+  }
+
+  #form-step-1 button {
+    font-size: 14px; /* Adjust button size */
+    padding: 8px 15px; /* Adjust button padding */
+  }
+}
+/* General Form Step Styling */
+.form-step {
+  position: relative; /* Use relative positioning for alignment */
+  background-color: #ffffff; /* White background for clarity */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Inner padding */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 20px auto; /* Center alignment */
+  max-width: 600px; /* Limit width for readability */
+  z-index: 1; /* Ensure it sits above other elements */
+}
+
+/* Ensures the forms don't overlap */
+.hidden {
+  display: none; /* Completely hide non-active steps */
+}
+
+/* Styling for Inputs and Textareas */
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%; /* Full-width inputs */
+  padding: 10px; /* Add padding */
+  font-size: 16px; /* Standard font size */
+  border: 1px solid rgb(143, 89, 143); /* Theme border */
+  border-radius: 5px; /* Rounded input fields */
+  margin-bottom: 15px; /* Spacing between fields */
+  box-sizing: border-box; /* Prevent overflow issues */
+}
+
+/* Step Navigation Buttons */
+button {
+  background-color: rgb(143, 89, 143); /* Purple button */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded edges */
+  padding: 10px 20px; /* Button padding */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  margin: 10px; /* Space around buttons */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth effects */
+}
+
+button:hover {
+  background-color: rgb(138, 54, 138); /* Darker purple hover effect */
+  transform: scale(1.05); /* Subtle hover scaling */
+}
+
+/* Drag-and-Drop Styling */
+#drop-area {
+  position: relative; /* Maintain alignment */
+  width: 300px;
+  height: 150px;
+  border: 2px dashed purple; /* Dashed border */
+  text-align: center; /* Center-align content */
+  line-height: 150px; /* Vertically align text */
+  margin: 20px auto; /* Center the area */
+  box-sizing: border-box; /* Prevent overflow */
+  transition: background-color 0.3s ease;
+}
+
+#drop-area:hover {
+  background-color: rgba(143, 89, 143, 0.1); /* Subtle hover effect */
+}
+
+/* File Name Display Styling */
+#file-name-display {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  color: purple; /* Match theme */
+}
+
+/* Live Preview Section */
+#preview {
+  text-align: center; /* Center-align the content */
+  padding: 20px; /* Add some padding */
+}
+
+#preview-title {
+  font-size: 24px; /* Title font size */
+  font-weight: bold; /* Emphasis on title */
+  color: rgb(124, 8, 139); /* Purple text to match the theme */
+  margin-bottom: 10px;
+}
+
+#preview-description {
+  font-size: 16px; /* Description font size */
+  color: rgb(143, 89, 143); /* Theme-matching purple */
+  margin-bottom: 15px;
+  line-height: 1.5; /* Improve readability */
+}
+
+#preview-goal {
+  font-size: 18px; /* Slightly larger font for goal */
+  font-weight: bold; /* Bold for emphasis */
+  color: rgb(138, 54, 138); /* Match hover colors */
+}
+
+/* Milestone Display Section */
+#milestone-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.milestone {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Circular milestones */
+  text-align: center; /* Center-align text */
+  line-height: 50px; /* Vertically align text */
+  color: white;
+  background-color: gray; /* Default milestone color */
+  transition: background-color 0.3s ease;
+}
+
+.milestone.active {
+  background-color: green; /* Active milestone color */
+}

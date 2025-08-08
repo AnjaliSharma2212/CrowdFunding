@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campaign Preview</title>
+    <link rel="stylesheet" href="/css/campaign.css" />
+  </head>
+  <body>
+    <h1>Preview Campaign Here</h1>
+
+    <!-- Navigation to multiple form steps -->
+    <div id="form-step-1" class="form-step">
+      <!-- Step 1: Compaign details -->
+      <h3>Step 1: Campaign Details</h3>
+
+      <!-- input for compaign title -->
+      <input
+        type="text"
+        id="campaign-title"
+        placeholder="Campaign Title"
+        required
+      />
+      <textarea
+        style="font-family: Arial, sans-serif"
+        id="campaign-description"
+        placeholder="Campaign Description"
+        required
+      ></textarea>
+      <!-- button to go to the next step -->
+      <button onclick="nextStep(2)">Next</button>
+    </div>
+
+    <!-- Step 2: Fundraisng Goal -->
+    <div id="form-step-2" class="form-step hidden">
+      <h3>Step 2: Add Fundraising Goal</h3>
+      <!-- input for Fundraising goal -->
+      <input
+        type="number"
+        placeholder="Fundraising Goal(e.g. , $1000)"
+        id="campaign-goal"
+        required
+      />
+      <!-- button to go back to previous page -->
+      <button onclick="prevStep(1)">Previous</button>
+      <!-- button to go next  -->
+      <button onclick="nextStep(3)">Next</button>
+    </div>
+    <!-- Step 3: media upload -->
+    <div id="form-step-3" class="form-step hidden">
+      <h3>Step 3: Upload Media</h3>
+      <div
+        id="drop-area"
+        ondragover="event.preventDefault()"
+        ondrop="uploadFile(event)"
+      >
+        Drag and drop files here
+      </div>
+      <p id="file-name-display">No File Uploaded yet</p>
+      <!-- file will display here -->
+      <button
+        id="remove-file-btn"
+        style="display: none"
+        onclick="removeUploadedFile()"
+      >
+        Remove uploaded File
+      </button>
+      <button onclick="prevStep(2)">Previous</button>
+      <button onclick="nextStep(4)">Next</button>
+    </div>
+    <!-- Step 4 preview -->
+    <div id="form-step-4" class="form-step hidden">
+      <h3>Step 4: Live Preview</h3>
+      <div id="preview">
+        <h3 id="preview-title"></h3>
+        <p id="preview-description"></p>
+        <p id="preview-goal"></p>
+      </div>
+      <button onclick="prevStep(3)">Previous</button>
+      <button onclick="submitCampaign()">Submit</button>
+    </div>
+
+    <script type="module" src="/js/index.js"></script>
+    <!-- Firebase Core SDK -->
+    <script
+      type="module"
+      src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app-compat.js"
+    ></script>
+
+    <!-- Firebase Storage SDK -->
+    <script
+      type="module"
+      src="https://www.gstatic.com/firebasejs/9.17.1/firebase-storage-compat.js"
+    ></script>
+
+    <!-- Firebase Firestore SDK (if you're using Firestore) -->
+    <script
+      type="module"
+      src="https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore-compat.js"
+    ></script>
+
+    <script type="module" src="/js/index.js"></script>
+  </body>
+</html>

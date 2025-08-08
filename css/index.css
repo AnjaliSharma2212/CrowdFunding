@@ -1,0 +1,441 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("https://i.pinimg.com/236x/fd/fe/de/fdfede3b8867c023a83f2f0e3a85a9b7.jpg");
+  background-size: contain;
+}
+body {
+  background-image: url("https://i.pinimg.com/originals/3e/2f/b4/3e2fb42b6d55b6af8c2c278fd567df20.jpg"); /* Updated to a high-quality image URL */
+  background-size: cover; /* Ensures the background fully covers the viewport */
+  background-position: center center; /* Centers the image properly */
+  background-attachment: fixed; /* Keeps the image static during scrolling */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+#header-section {
+  background-color: #f0f0f0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+nav a {
+  margin: auto;
+  padding: 10x;
+  margin: 20px;
+}
+nav h3 {
+  font-family: "Arial Narrow", Arial, sans-serif;
+  color: rgb(124, 8, 139);
+}
+.h3-nav {
+  font-family: "Arial Narrow", Arial, sans-serif;
+  background-color: rgb(158, 12, 158);
+  width: fit-content;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  font-weight: lighter;
+  color: white;
+  text-decoration: none;
+}
+.h3-nav:hover {
+  background-color: purple;
+}
+
+#campaign-overview:hover {
+  color: purple;
+}
+img#logo-img {
+  width: 130px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 10px 30px;
+}
+/* First section container*/
+#container {
+  width: 100%;
+  height: fit-content;
+  background: linear-gradient(
+    rgb(143, 89, 143),
+    rgb(205, 157, 224),
+    rgb(227, 185, 243)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+/* call to action link */
+#start-link {
+  width: fit-content;
+  padding: 8px 16px;
+  height: 40px;
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: purple;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+.link {
+  text-decoration: none;
+  color: white;
+}
+#start-link:hover {
+  background-color: rgb(138, 54, 138);
+  transform: scale(1.05);
+}
+
+/* image styling */
+
+#img-first-section img {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#second-section {
+  width: 60%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-right: 20%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  border-radius: 12px;
+  top: 70%;
+  z-index: 200;
+  background-color: #fff;
+}
+#second-section img {
+  width: 80px;
+  height: 80px;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+/* #second-section:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+    cursor: pointer;
+} */
+.feature {
+  text-align: center;
+  margin: 20px;
+}
+.feature img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 5px;
+}
+.feature h3 {
+  margin: 0 15px;
+  color: #333;
+}
+#second-section h3 {
+  margin: 0 15px;
+  font-size: 1.2rem;
+  color: #333;
+}
+/* Footer styling */
+#footer-section {
+  background: linear-gradient(
+    rgb(143, 89, 143),
+    rgb(115, 35, 146),
+    rgb(183, 56, 233)
+  );
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+#social-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#social-links a:hover {
+  text-decoration: underline;
+  color: rgb(223, 144, 247);
+}
+
+#footer-container p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+/* Image Styling */
+#img-first-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Adds spacing between images */
+  padding: 20px 0; /* Adds breathing room around the section */
+}
+
+#img-first-section img {
+  width: 300px; /* Ensures consistent size for all images */
+  height: auto; /* Maintains the aspect ratio */
+  border-radius: 10px; /* Gives images a modern, rounded look */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Adds depth with a shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animations */
+}
+
+#img-first-section img:hover {
+  transform: scale(1.05); /* Subtle zoom effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhances shadow for hover effect */
+}
+
+/* Feature Images in the Second Section */
+#second-section img {
+  width: 100px; /* Uniform size for feature icons */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 8px; /* Slightly rounded corners for consistency */
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+#second-section img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Emphasizes hover state */
+}
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1,
+h3,
+h2 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: purple;
+  color: white;
+  padding: 10px;
+}
+
+header img {
+  height: 50px;
+}
+
+.h3-nav a {
+  color: white;
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+#first-section {
+  padding: 20px;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+
+.link {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: purple;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.link:hover {
+  background-color: #4b0082;
+}
+
+#img-first-section img {
+  margin: 10px;
+  border-radius: 10px;
+}
+
+#second-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.feature {
+  text-align: center;
+  max-width: 250px;
+}
+
+.feature img {
+  max-width: 100%;
+  height: auto;
+}
+/* Grid Container */
+#patient-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Individual Patient Cards */
+.patient-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  width: 400px;
+  height: 300px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+/* Image Styling */
+.patient-card img {
+  width: 100%; /* Full card width */
+  height: 150px; /* Fixed height */
+  object-fit: cover; /* Ensures the image maintains proportions */
+  border-radius: 8px;
+}
+
+#footer-section {
+  background-color: purple;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+#social-links a {
+  color: white;
+  margin: 0 10px;
+}
+
+#social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stacks items vertically for mobile */
+    align-items: center;
+    gap: 15px; /* Adds space between elements */
+  }
+
+  nav a {
+    font-size: 0.9rem; /* Reduces font size for smaller devices */
+    padding: 8px 10px; /* Reduces padding for compact design */
+  }
+
+  img#logo-img {
+    width: 50%; /* Scales down the logo for smaller screens */
+    margin-bottom: 10px; /* Adds space below the logo */
+  }
+
+  #footer-section {
+    padding: 15px;
+  }
+
+  #footer-container p {
+    font-size: 12px;
+  }
+
+  #social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-step {
+    padding: 15px; /* Adjust padding */
+    width: 90%; /* Full-width on smaller screens */
+  }
+
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    font-size: 14px; /* Reduce font size */
+  }
+
+  button {
+    font-size: 14px; /* Adjust button font size */
+    padding: 8px 15px;
+  }
+
+  #drop-area {
+    width: 90%;
+    height: 120px;
+    line-height: 120px; /* Adjust for smaller height */
+  }
+  #container {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+  #img-first-section img {
+    width: 90%;
+    height: auto;
+  }
+  #second-section {
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+    height: fit-content;
+    margin: auto;
+    top: 80%;
+    z-index: 200;
+  }
+}
+@media (max-width: 768px) {
+  .patient-list {
+    grid-template-columns: repeat(2, 1fr); /* Switch to 2-column layout */
+  }
+}
+
+@media (max-width: 480px) {
+  .patient-list {
+    grid-template-columns: 1fr; /* Single column for very small screens */
+  }
+}

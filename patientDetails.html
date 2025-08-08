@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details add for patients</title>
+    <link rel="stylesheet" href="./css/dashboard.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>Add Details of Patient</h3>
+      <input
+        type="text"
+        id="patient-name"
+        placeholder="Enter the patient name"
+        required
+      />
+      <input
+        type="number"
+        id="patient-age"
+        placeholder="Enter the patient age"
+        required
+      />
+      <input
+        type="text"
+        id="patient-condition"
+        placeholder="Enter the patient condition"
+        required
+      />
+      <input
+        type="text"
+        id="patient-image"
+        placeholder="Enter the image url"
+        required
+      />
+      <input
+        type="number"
+        id="patient-donation"
+        placeholder="Enter the patient donation raised"
+        required
+      />
+      <button class="btn" onclick="addPatientDetails()">Add Patient</button>
+    </div>
+  </body>
+  <script src="./js/patientsDetails.js"></script>
+</html>
